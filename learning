@@ -1,0 +1,34 @@
+live_loop :flibble do
+  sample :bd_haus, rate: 1
+  sleep 0.5
+end
+
+#catchy boom boom boom 
+
+play 60
+play 70 # higher nums are higher pitched
+# C of 4th octave is 60
+# next key would be 61
+
+# can do a chord by play 72, p75, p79
+#can also do decimal values
+
+
+
+# how do i pause before playing things?
+sleep 1 # 1 is length
+
+#can also do letters instead of nums
+play :C3 #specify third octave
+play :Fs3 #can specify sharp
+play :Eb3 #flat
+
+:r is for a rest
+
+amp: 1 #1 is normal, higher is strength
+pan # -1L, 0mid, 1R
+# I LOVE PAN
+play 60, amp: 0.5, pan: -1
+sleep 1
+play 62, amp: 1, pan: 1
+sleep 1
