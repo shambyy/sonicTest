@@ -9,6 +9,8 @@ live_loop :foo do
     play :C, release: 0.05
     sleep 0.15
   end
+
+  # HOW DO I EXTEND THIS FOR LONGER
   
   use_synth :prophet
   play 60, attack: 2.5, release: 0.3
