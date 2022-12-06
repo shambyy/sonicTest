@@ -1,0 +1,56 @@
+live_loop :foo do
+    use_synth :prophet
+    play :C, release: 0.1
+    sleep 0.15
+    play :C, release: 0.05
+    sleep 0.15
+    play :C, release: 0.05
+    sleep 0.15
+    play :C, release: 0.05
+    sleep 0.15
+  end
+  
+  use_synth :prophet
+  play 60, attack: 2.5, release: 0.3
+  sleep 2.5
+  #end beginning
+  # put in sync :foo
+  
+  2.times do
+    #sync :foo
+    
+    
+    use_synth :dsaw
+    sample :bd_haus, rate: 2
+    play :C5, amp: 1, release: 0.7
+    sleep 0.75
+    play :C5, amp: 1, release: 0.4
+    sleep 0.4
+    play :Bb4, amp: 1, release: 0.4
+    sleep 0.3
+    play :C5, amp: 1, release: 0.4
+    sleep 0.75
+    play :C5, amp: 1, release: 0.4
+    sleep 0.4
+    play :Bb4, amp: 1, release: 0.4
+    sleep 0.3
+    play :C5, amp: 1, release: 0.4
+    sleep 0.75
+    
+    play :C5, release: 0.4
+    sleep 0.4
+    play :As, release: 0.4
+    sleep 0.4
+    play :Gs, release: 0.75
+    sleep 0.75
+    play :G, release: 0.4
+    sleep 0.25
+    play :Gs, release: 0.4
+    sleep 0.25
+    play :G, release: 0.4
+    sleep 0.25
+    play :Gs, release: 0.4
+    sleep 0.25
+    play :As, release: 0.4
+    sleep 0.25
+  end

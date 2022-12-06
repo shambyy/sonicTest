@@ -32,3 +32,19 @@ play 60, amp: 0.5, pan: -1
 sleep 1
 play 62, amp: 1, pan: 1
 sleep 1
+
+#synth stuff
+#have to say use_synth and type before play
+use_synth :tb303 # spaceship
+play 38
+use_synth :dsaw #cute
+play 50
+use_synth :prophet #tinny sound
+play 57 
+
+use_synth :fm #deeper
+play 60
+use_synth :pulse #higher pitch
+
+play 60, release: 1 # how long it goes
+# by making it short can make it more choppy

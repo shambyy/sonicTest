@@ -1,3 +1,116 @@
 can be amp low beg
 left right pan
 eventually go mid
+
+super soft thumps in back for buildup
+
+tune in just the right, beat/drums in both, then switch 
+just tune in left
+inspo: silhouttes, dougie stu
+
+
+play 38, pan: -1
+sleep 0.5
+play 50, pan: -1
+sleep 0.5
+play 62, pan: 1
+play 58, pan: 1
+sleep 1
+play 65
+
+
+
+live_loop :foo do
+  play :E, release: 0.25
+  sleep 0.25
+  play :Fs, release: 0.25
+  sleep 0.25
+  play :G, release: 0.25
+  sleep 0.25
+end
+
+-------------------------
+drums
+
+use_bpm 100
+
+live_loop :drums do
+  sample :drum_heavy_kick
+  sleep 1
+  sample :drum_snare_hard
+  sleep 1
+  sample :drum_heavy_kick
+  sleep 1
+  sample :drum_snare_hard
+  sleep 1
+end
+
+
+C A# C 2x
+C A# C G#  G G#  G G#  A# C
+
+
+
+
+
+play :C, release: 0.5
+sleep 0.5
+play :C, release: 0.25
+sleep 0.25
+play :As, release: 0.5
+sleep 0.25
+play :C, release: 0.5
+sleep 0.5
+play :C, release: 0.5
+sleep 0.25
+play :As, release: 0.5
+sleep 0.25
+play :C, release: 0.5
+sleep 1
+
+
+
+
+
+HERE
+
+
+
+live_loop :foo do
+    use_synth :prophet
+    play :C, release: 0.1
+    sleep 0.15
+    play :C, release: 0.05
+    sleep 0.15
+    play :C, release: 0.05
+    sleep 0.15
+    play :C, release: 0.05
+    sleep 0.15
+  end
+  use_synth :prophet
+  play 60, attack: 2.5, release: 0.5
+  sleep 4
+  
+  use_synth :dsaw
+  sample :bd_haus, rate: 2
+  play :C5, amp: 1, release: 0.5
+  sleep 1.25
+  play :C5, amp: 1, release: 0.2
+  sleep 0.5
+  play :Bb4, amp: 1, release: 0.2
+  sleep 0.5
+  play :C5, amp: 1, release: 0.5
+  sleep 1.25
+  play :C5, amp: 1, release: 0.2
+  sleep 0.5
+  play :Bb4, amp: 1, release: 0.2
+  sleep 0.5
+  play :C5, amp: 1, release: 0.5
+  sleep 1
+  
+  play :C5, release: 0.2
+  sleep 0.5
+  play :As, release: 0.2
+  sleep 0.5
+  play :C, release: 0.5
+  sleep 1
