@@ -1,7 +1,14 @@
+##| Sofía Hamby
+##| CSCI 3725
+##| M8: Eye of the Liger
+##| 14 December 2022
+
+
+# background beats
 live_loop :foo do
   use_synth :prophet
   play :C, release: 0.08
-  sleep 0.15
+  sleep 0.157
   play :C, release: 0.05
   sleep 0.15
   play :C, release: 0.05
@@ -12,28 +19,31 @@ end
 
 sleep 4
 
+
+# build up intro
 use_synth :prophet
 play 60, attack: 2.5, release: 0.25
 sleep 2.5
 
 
+# beaty build up
 define :buildup do
   use_bpm 50
   sync :foo
   
   use_synth :dsaw
   sample :bd_haus, rate: 2.5
-  play :C5, amp: 1, release: 1.2
+  play :C5, amp: 1, release: 1.15
   sleep 0.95
-  play :C5, amp: 1, release: 0.5
+  play :C5, amp: 1, release: 0.4
   sleep 0.4
-  play :Bb4, amp: 1, release: 0.5
+  play :Bb4, amp: 1, release: 0.6
   sleep 0.4
   play :C5, amp: 1, release: 1.2
   sleep 1.2
-  play :C5, amp: 1, release: 0.5
+  play :C5, amp: 1, release: 0.4
   sleep 0.4
-  play :Bb4, amp: 1, release: 0.5
+  play :Bb4, amp: 1, release: 0.6
   sleep 0.4
   play :C5, amp: 1, release: 0.75
   sleep 1.2
@@ -43,7 +53,7 @@ define :buildup do
   play :As, release: 0.5
   sleep 0.4
   play :Gs, release: 1
-  sleep 0.75
+  sleep 0.7
   play :G, release: 0.5
   sleep 0.25
   play :Gs, release: 0.5
@@ -53,23 +63,25 @@ define :buildup do
   play :Gs, release: 0.5
   sleep 0.25
   play :As, release: 1
-  sleep 0.2
+  sleep 0.16
 end
+
 
 2.times do
   buildup
 end
 
 
+# another mini build up
 sleep 0.5
 use_synth :tech_saws
 play 60, attack: 2.5, release: 0.25
 
-sleep 3.5
+sleep 3
 
 
-#it's the eye of the tiger
-#it's the thrill of the fight
+# it's the eye of the tiger
+# it's the thrill of the fight
 define :chorus do
   
   use_synth :tech_saws
@@ -105,13 +117,13 @@ define :chorus do
   
 end
 
-#it's the eye of the tiger
-#it's the thrill of the fight
+
+# it's the eye of the tiger
+# it's the thrill of the fight
 chorus
 
 
 #rising up to the challenge of our rival
-
 play :As4, release: 1
 sleep 0.5
 play :C5, release: 1
@@ -141,7 +153,8 @@ chorus
 #it's the thrill of the fight
 
 
-#then the and it's la la la laaaa of the tiger
+# and he's watching us all with the eye
+# of the tiger
 #fadeout
 use_synth :tech_saws
 play :As4, release: 1
@@ -163,7 +176,6 @@ sleep 0.4
 play :F5, release: 2.5
 sleep 0.5
 
-
 play :As4, release: 1
 sleep 0.35
 play :Gs4, release: 0.75
@@ -172,6 +184,7 @@ play :As4, release: 1
 sleep 0.35
 play :Gs4, release: 0.75
 sleep 0.5
+
 
 #reverse buildup
 use_synth :prophet
